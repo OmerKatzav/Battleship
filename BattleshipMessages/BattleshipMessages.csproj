@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB9E2A7C-1136-4AFB-8EDC-410F384F3401}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BattleshipMessages</RootNamespace>
+    <AssemblyName>BattleshipMessages</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="IMessage.cs" />
+    <Compile Include="Messages\CitiesRequest.cs" />
+    <Compile Include="Messages\CitiesResponse.cs" />
+    <Compile Include="Messages\GameParamsRequest.cs" />
+    <Compile Include="Messages\ChatRequest.cs" />
+    <Compile Include="Messages\ChatResponse.cs" />
+    <Compile Include="Messages\GameParamsResponse.cs" />
+    <Compile Include="Messages\GameRequest.cs" />
+    <Compile Include="Messages\GameResponse.cs" />
+    <Compile Include="Messages\GameStartRequest.cs" />
+    <Compile Include="Messages\GameStartResponse.cs" />
+    <Compile Include="Messages\GetDataRequest.cs" />
+    <Compile Include="Messages\GetDataResponse.cs" />
+    <Compile Include="Messages\LoginRequest.cs" />
+    <Compile Include="Messages\LoginResponse.cs" />
+    <Compile Include="MessageFactory.cs" />
+    <Compile Include="Messages\OpenGamesRequest.cs" />
+    <Compile Include="Messages\OpenGamesResponse.cs" />
+    <Compile Include="Messages\OpponentLeftMessage.cs" />
+    <Compile Include="Messages\PingRequest.cs" />
+    <Compile Include="Messages\PingResponse.cs" />
+    <Compile Include="Messages\RegisterRequest.cs" />
+    <Compile Include="Messages\RegisterResponse.cs" />
+    <Compile Include="Messages\WaitingForOpponentMessage.cs" />
+    <Compile Include="MessageTypes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BattleshipObjects\BattleshipObjects.csproj">
+      <Project>{f467e198-57e7-4ab2-b0a1-ccd1628716e9}</Project>
+      <Name>BattleshipObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BattleshipUtils\BattleshipUtils.csproj">
+      <Project>{1b74a1ee-f242-4072-b86e-7728b4d638cc}</Project>
+      <Name>BattleshipUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

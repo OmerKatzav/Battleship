@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipServer", "BattleshipServer\BattleshipServer.csproj", "{B1D8F4F6-82F6-45C9-AECD-F02768D581CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B74A1EE-F242-4072-B86E-7728B4D638CC} = {1B74A1EE-F242-4072-B86E-7728B4D638CC}
+		{EB9E2A7C-1136-4AFB-8EDC-410F384F3401} = {EB9E2A7C-1136-4AFB-8EDC-410F384F3401}
+		{F467E198-57E7-4AB2-B0A1-CCD1628716E9} = {F467E198-57E7-4AB2-B0A1-CCD1628716E9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipClient", "BattleshipClient\BattleshipClient.csproj", "{9B21BB4A-7401-4676-9CA7-9E0A54917E07}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B74A1EE-F242-4072-B86E-7728B4D638CC} = {1B74A1EE-F242-4072-B86E-7728B4D638CC}
+		{EB9E2A7C-1136-4AFB-8EDC-410F384F3401} = {EB9E2A7C-1136-4AFB-8EDC-410F384F3401}
+		{F467E198-57E7-4AB2-B0A1-CCD1628716E9} = {F467E198-57E7-4AB2-B0A1-CCD1628716E9}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A1724FDD-26DA-4910-8B20-3AA6EDC54652}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipMessages", "BattleshipMessages\BattleshipMessages.csproj", "{EB9E2A7C-1136-4AFB-8EDC-410F384F3401}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B74A1EE-F242-4072-B86E-7728B4D638CC} = {1B74A1EE-F242-4072-B86E-7728B4D638CC}
+		{F467E198-57E7-4AB2-B0A1-CCD1628716E9} = {F467E198-57E7-4AB2-B0A1-CCD1628716E9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipObjects", "BattleshipObjects\BattleshipObjects.csproj", "{F467E198-57E7-4AB2-B0A1-CCD1628716E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B74A1EE-F242-4072-B86E-7728B4D638CC} = {1B74A1EE-F242-4072-B86E-7728B4D638CC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipUtils", "BattleshipUtils\BattleshipUtils.csproj", "{1B74A1EE-F242-4072-B86E-7728B4D638CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1D8F4F6-82F6-45C9-AECD-F02768D581CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D8F4F6-82F6-45C9-AECD-F02768D581CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D8F4F6-82F6-45C9-AECD-F02768D581CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D8F4F6-82F6-45C9-AECD-F02768D581CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B21BB4A-7401-4676-9CA7-9E0A54917E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B21BB4A-7401-4676-9CA7-9E0A54917E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B21BB4A-7401-4676-9CA7-9E0A54917E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B21BB4A-7401-4676-9CA7-9E0A54917E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB9E2A7C-1136-4AFB-8EDC-410F384F3401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9E2A7C-1136-4AFB-8EDC-410F384F3401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9E2A7C-1136-4AFB-8EDC-410F384F3401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9E2A7C-1136-4AFB-8EDC-410F384F3401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F467E198-57E7-4AB2-B0A1-CCD1628716E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F467E198-57E7-4AB2-B0A1-CCD1628716E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F467E198-57E7-4AB2-B0A1-CCD1628716E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F467E198-57E7-4AB2-B0A1-CCD1628716E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B74A1EE-F242-4072-B86E-7728B4D638CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B74A1EE-F242-4072-B86E-7728B4D638CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B74A1EE-F242-4072-B86E-7728B4D638CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B74A1EE-F242-4072-B86E-7728B4D638CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98FB055E-CF86-4574-83E8-D55B70CD9DF8}
+	EndGlobalSection
+EndGlobal
